@@ -23,7 +23,7 @@ public class UserController {
     return "All can access!";
   }
  
-  @GetMapping("/home")
+  @GetMapping("/user")
   public String home() {
     return "In Home! Only users can access!";
   }

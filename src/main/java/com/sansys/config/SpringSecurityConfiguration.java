@@ -52,7 +52,7 @@ public class SpringSecurityConfiguration {
     httpSecurity.cors(CorsConfigurer::disable);
     httpSecurity.authorizeHttpRequests(auth -> {
       auth.requestMatchers("/").permitAll();
-      auth.requestMatchers("/home").hasAnyRole("USER");
+      auth.requestMatchers("/user").hasAnyRole("USER");
       auth.requestMatchers("/admin/**").hasAnyRole("ADMIN");
       auth.anyRequest().authenticated();
     });
