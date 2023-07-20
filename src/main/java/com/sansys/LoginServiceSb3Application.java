@@ -10,4 +10,5 @@ public class LoginServiceSb3Application {
 		SpringApplication.run(LoginServiceSb3Application.class, args);
 	}
 
+
 }
